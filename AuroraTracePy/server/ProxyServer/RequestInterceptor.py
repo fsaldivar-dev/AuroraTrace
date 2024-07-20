@@ -2,6 +2,13 @@ from mitmproxy import http
 import json
 import logging
 
+import sys
+import os
+# Agregar el directorio raíz del proyecto al sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+from server.SocketServer import send_request_to_swift
+
 class RequestInterceptor:
     def __init__(self):
         self.logger = logging.getLogger('RequestInterceptor')
@@ -37,3 +44,5 @@ class RequestInterceptor:
 
         # Imprimir un resumen en la consola
         print(f"Intercepted request: {flow.request.method} {flow.request.url}")
+        send_request_to_swift(f"{flow.request.method} {flow.request.url}")
+

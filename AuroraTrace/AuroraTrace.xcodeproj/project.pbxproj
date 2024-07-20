@@ -15,6 +15,10 @@
 		9D6E5E862C4BEF5500C3B789 /* AuroraTraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E852C4BEF5500C3B789 /* AuroraTraceTests.swift */; };
 		9D6E5E902C4BEF5500C3B789 /* AuroraTraceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E8F2C4BEF5500C3B789 /* AuroraTraceUITests.swift */; };
 		9D6E5E922C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */; };
+		9D94C7342C4C27F100802A5C /* ServerSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7332C4C27F100802A5C /* ServerSocket.swift */; };
+		9D94C7362C4C2ACD00802A5C /* AuroraBridgeSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7352C4C2ACD00802A5C /* AuroraBridgeSocket.swift */; };
+		9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7392C4C310700802A5C /* SocketServerPreeview.swift */; };
+		9D94C73E2C4C376500802A5C /* NativeTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C73D2C4C376500802A5C /* NativeTextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		9D6E5E8B2C4BEF5500C3B789 /* AuroraTraceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuroraTraceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6E5E8F2C4BEF5500C3B789 /* AuroraTraceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceUITests.swift; sourceTree = "<group>"; };
 		9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D94C7332C4C27F100802A5C /* ServerSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSocket.swift; sourceTree = "<group>"; };
+		9D94C7352C4C2ACD00802A5C /* AuroraBridgeSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraBridgeSocket.swift; sourceTree = "<group>"; };
+		9D94C7392C4C310700802A5C /* SocketServerPreeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerPreeview.swift; sourceTree = "<group>"; };
+		9D94C73D2C4C376500802A5C /* NativeTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeTextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,9 @@
 		9D6E5E6F2C4BEF5300C3B789 /* AuroraTrace */ = {
 			isa = PBXGroup;
 			children = (
+				9D94C7382C4C30E900802A5C /* UI */,
+				9D94C7372C4C30A600802A5C /* Data */,
+				9D94C72F2C4C27A000802A5C /* Domain */,
 				9D6E5E702C4BEF5300C3B789 /* AuroraTraceApp.swift */,
 				9D6E5E722C4BEF5300C3B789 /* ContentView.swift */,
 				9D6E5E742C4BEF5300C3B789 /* Item.swift */,
@@ -132,6 +143,55 @@
 				9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */,
 			);
 			path = AuroraTraceUITests;
+			sourceTree = "<group>";
+		};
+		9D94C72F2C4C27A000802A5C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9D94C7322C4C27B400802A5C /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7332C4C27F100802A5C /* ServerSocket.swift */,
+				9D94C7352C4C2ACD00802A5C /* AuroraBridgeSocket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		9D94C7372C4C30A600802A5C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7322C4C27B400802A5C /* Socket */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9D94C7382C4C30E900802A5C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C73C2C4C375300802A5C /* Components */,
+				9D94C73B2C4C374500802A5C /* MOC */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9D94C73B2C4C374500802A5C /* MOC */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7392C4C310700802A5C /* SocketServerPreeview.swift */,
+			);
+			path = MOC;
+			sourceTree = "<group>";
+		};
+		9D94C73C2C4C375300802A5C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C73D2C4C376500802A5C /* NativeTextArea.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */,
+				9D94C7342C4C27F100802A5C /* ServerSocket.swift in Sources */,
 				9D6E5E732C4BEF5300C3B789 /* ContentView.swift in Sources */,
 				9D6E5E752C4BEF5300C3B789 /* Item.swift in Sources */,
 				9D6E5E712C4BEF5300C3B789 /* AuroraTraceApp.swift in Sources */,
+				9D94C73E2C4C376500802A5C /* NativeTextArea.swift in Sources */,
+				9D94C7362C4C2ACD00802A5C /* AuroraBridgeSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
