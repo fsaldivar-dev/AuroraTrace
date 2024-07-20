@@ -12,8 +12,8 @@ import UniformTypeIdentifiers
 @main
 struct AuroraTraceApp: App {
     var body: some Scene {
-        DocumentGroup(editing: .itemDocument, migrationPlan: AuroraTraceMigrationPlan.self) {
-            ContentView()
+        Window("AuroraTrace", id: "Home") {
+            SocketServerPreeview()
         }
     }
 }

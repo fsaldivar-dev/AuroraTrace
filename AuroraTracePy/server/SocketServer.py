@@ -1,40 +1,23 @@
-import signal
-import sys
-import logging
-import subprocess
-from config.ProxyConfig import enable_proxy, disable_proxy, get_local_ip
-import os
+import socket
+import json
 
-logger = logging.getLogger(__name__)
-process = None
+def send_request_to_swift(request_data):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.connect(('127.0.0.1', 65432))
+        message = json.dumps(request_data)
+        s.sendall(message.encode('utf-8'))
 
-def handle_exit(signum, frame):
-    print("Shutting down and disabling proxy...")
-    disable_proxy()
-    sys.exit(0)
-
-# Configure signals to capture application shutdown
-signal.signal(signal.SIGINT, handle_exit)  # Ctrl+C
-signal.signal(signal.SIGTERM, handle_exit) # Termination from the OS
-
-def setup_proxy():
-    global process
-    local_ip = get_local_ip()
-    enable_proxy(local_ip, local_ip)
-    logger.info(f"Proxy enabled with IP: {local_ip}")
-    print("Hi Javi")
-    process = subprocess.Popen(["mitmdump", "-s", "server/ProxyServer/ProxyServer.py"])
-    process.wait()
-    if process.returncode != 0:
-        logger.error("Failed to start mitmdump")
-        print("Error: Failed to start mitmdump")
-        return
-
-if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "setup_proxy":
-            setup_proxy()
+        # Recibe la respuesta del servidor
+        response = s.recv(65536)
+        
+        # Decodifica la respuesta
+        decoded_response = response.decode('utf-8')
+        
+        # Maneja la respuesta vacía
+        if not decoded_response:
+            # Si la respuesta está vacía, puedes simplemente retornar un valor por defecto o continuar
+            return {}  # Puedes cambiar esto a lo que consideres adecuado en tu caso
         else:
-            print(f"Unknown function {sys.argv[1]}")
-    else:
-        print("No function specified")
+            # Procesa la respuesta como JSON
+            print(f"response Socket {decoded_response}")
+            return {}
