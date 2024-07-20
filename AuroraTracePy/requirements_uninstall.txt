@@ -1,0 +1,5 @@
+# requirements_uninstall.txt
+flask
+werkzeug
+jinja2
+markupsafe
