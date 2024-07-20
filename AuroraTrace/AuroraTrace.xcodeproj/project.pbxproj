@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D6E5E712C4BEF5300C3B789 /* AuroraTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E702C4BEF5300C3B789 /* AuroraTraceApp.swift */; };
+		9D6E5E732C4BEF5300C3B789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E722C4BEF5300C3B789 /* ContentView.swift */; };
+		9D6E5E752C4BEF5300C3B789 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E742C4BEF5300C3B789 /* Item.swift */; };
+		9D6E5E772C4BEF5500C3B789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6E5E762C4BEF5500C3B789 /* Assets.xcassets */; };
+		9D6E5E7A2C4BEF5500C3B789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6E5E792C4BEF5500C3B789 /* Preview Assets.xcassets */; };
+		9D6E5E862C4BEF5500C3B789 /* AuroraTraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E852C4BEF5500C3B789 /* AuroraTraceTests.swift */; };
+		9D6E5E902C4BEF5500C3B789 /* AuroraTraceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E8F2C4BEF5500C3B789 /* AuroraTraceUITests.swift */; };
+		9D6E5E922C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D6E5E822C4BEF5500C3B789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6E5E652C4BEF5300C3B789 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D6E5E6C2C4BEF5300C3B789;
+			remoteInfo = AuroraTrace;
+		};
+		9D6E5E8C2C4BEF5500C3B789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6E5E652C4BEF5300C3B789 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D6E5E6C2C4BEF5300C3B789;
+			remoteInfo = AuroraTrace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D6E5E6D2C4BEF5300C3B789 /* AuroraTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuroraTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6E5E702C4BEF5300C3B789 /* AuroraTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceApp.swift; sourceTree = "<group>"; };
+		9D6E5E722C4BEF5300C3B789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D6E5E742C4BEF5300C3B789 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9D6E5E762C4BEF5500C3B789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D6E5E792C4BEF5500C3B789 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D6E5E7B2C4BEF5500C3B789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6E5E7C2C4BEF5500C3B789 /* AuroraTrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AuroraTrace.entitlements; sourceTree = "<group>"; };
+		9D6E5E812C4BEF5500C3B789 /* AuroraTraceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuroraTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6E5E852C4BEF5500C3B789 /* AuroraTraceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceTests.swift; sourceTree = "<group>"; };
+		9D6E5E8B2C4BEF5500C3B789 /* AuroraTraceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuroraTraceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6E5E8F2C4BEF5500C3B789 /* AuroraTraceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceUITests.swift; sourceTree = "<group>"; };
+		9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTraceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D6E5E6A2C4BEF5300C3B789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E7E2C4BEF5500C3B789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E882C4BEF5500C3B789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D6E5E642C4BEF5300C3B789 = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E6F2C4BEF5300C3B789 /* AuroraTrace */,
+				9D6E5E842C4BEF5500C3B789 /* AuroraTraceTests */,
+				9D6E5E8E2C4BEF5500C3B789 /* AuroraTraceUITests */,
+				9D6E5E6E2C4BEF5300C3B789 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D6E5E6E2C4BEF5300C3B789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E6D2C4BEF5300C3B789 /* AuroraTrace.app */,
+				9D6E5E812C4BEF5500C3B789 /* AuroraTraceTests.xctest */,
+				9D6E5E8B2C4BEF5500C3B789 /* AuroraTraceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D6E5E6F2C4BEF5300C3B789 /* AuroraTrace */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E702C4BEF5300C3B789 /* AuroraTraceApp.swift */,
+				9D6E5E722C4BEF5300C3B789 /* ContentView.swift */,
+				9D6E5E742C4BEF5300C3B789 /* Item.swift */,
+				9D6E5E762C4BEF5500C3B789 /* Assets.xcassets */,
+				9D6E5E7B2C4BEF5500C3B789 /* Info.plist */,
+				9D6E5E7C2C4BEF5500C3B789 /* AuroraTrace.entitlements */,
+				9D6E5E782C4BEF5500C3B789 /* Preview Content */,
+			);
+			path = AuroraTrace;
+			sourceTree = "<group>";
+		};
+		9D6E5E782C4BEF5500C3B789 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E792C4BEF5500C3B789 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D6E5E842C4BEF5500C3B789 /* AuroraTraceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E852C4BEF5500C3B789 /* AuroraTraceTests.swift */,
+			);
+			path = AuroraTraceTests;
+			sourceTree = "<group>";
+		};
+		9D6E5E8E2C4BEF5500C3B789 /* AuroraTraceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E5E8F2C4BEF5500C3B789 /* AuroraTraceUITests.swift */,
+				9D6E5E912C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift */,
+			);
+			path = AuroraTraceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D6E5E6C2C4BEF5300C3B789 /* AuroraTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6E5E952C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTrace" */;
+			buildPhases = (
+				9D6E5E692C4BEF5300C3B789 /* Sources */,
+				9D6E5E6A2C4BEF5300C3B789 /* Frameworks */,
+				9D6E5E6B2C4BEF5300C3B789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuroraTrace;
+			productName = AuroraTrace;
+			productReference = 9D6E5E6D2C4BEF5300C3B789 /* AuroraTrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D6E5E802C4BEF5500C3B789 /* AuroraTraceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6E5E982C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTraceTests" */;
+			buildPhases = (
+				9D6E5E7D2C4BEF5500C3B789 /* Sources */,
+				9D6E5E7E2C4BEF5500C3B789 /* Frameworks */,
+				9D6E5E7F2C4BEF5500C3B789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D6E5E832C4BEF5500C3B789 /* PBXTargetDependency */,
+			);
+			name = AuroraTraceTests;
+			productName = AuroraTraceTests;
+			productReference = 9D6E5E812C4BEF5500C3B789 /* AuroraTraceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D6E5E8A2C4BEF5500C3B789 /* AuroraTraceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6E5E9B2C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTraceUITests" */;
+			buildPhases = (
+				9D6E5E872C4BEF5500C3B789 /* Sources */,
+				9D6E5E882C4BEF5500C3B789 /* Frameworks */,
+				9D6E5E892C4BEF5500C3B789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D6E5E8D2C4BEF5500C3B789 /* PBXTargetDependency */,
+			);
+			name = AuroraTraceUITests;
+			productName = AuroraTraceUITests;
+			productReference = 9D6E5E8B2C4BEF5500C3B789 /* AuroraTraceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D6E5E652C4BEF5300C3B789 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					9D6E5E6C2C4BEF5300C3B789 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					9D6E5E802C4BEF5500C3B789 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 9D6E5E6C2C4BEF5300C3B789;
+					};
+					9D6E5E8A2C4BEF5500C3B789 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 9D6E5E6C2C4BEF5300C3B789;
+					};
+				};
+			};
+			buildConfigurationList = 9D6E5E682C4BEF5300C3B789 /* Build configuration list for PBXProject "AuroraTrace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D6E5E642C4BEF5300C3B789;
+			productRefGroup = 9D6E5E6E2C4BEF5300C3B789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D6E5E6C2C4BEF5300C3B789 /* AuroraTrace */,
+				9D6E5E802C4BEF5500C3B789 /* AuroraTraceTests */,
+				9D6E5E8A2C4BEF5500C3B789 /* AuroraTraceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D6E5E6B2C4BEF5300C3B789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6E5E7A2C4BEF5500C3B789 /* Preview Assets.xcassets in Resources */,
+				9D6E5E772C4BEF5500C3B789 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E7F2C4BEF5500C3B789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E892C4BEF5500C3B789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D6E5E692C4BEF5300C3B789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6E5E732C4BEF5300C3B789 /* ContentView.swift in Sources */,
+				9D6E5E752C4BEF5300C3B789 /* Item.swift in Sources */,
+				9D6E5E712C4BEF5300C3B789 /* AuroraTraceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E7D2C4BEF5500C3B789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6E5E862C4BEF5500C3B789 /* AuroraTraceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D6E5E872C4BEF5500C3B789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6E5E922C4BEF5500C3B789 /* AuroraTraceUITestsLaunchTests.swift in Sources */,
+				9D6E5E902C4BEF5500C3B789 /* AuroraTraceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D6E5E832C4BEF5500C3B789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D6E5E6C2C4BEF5300C3B789 /* AuroraTrace */;
+			targetProxy = 9D6E5E822C4BEF5500C3B789 /* PBXContainerItemProxy */;
+		};
+		9D6E5E8D2C4BEF5500C3B789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D6E5E6C2C4BEF5300C3B789 /* AuroraTrace */;
+			targetProxy = 9D6E5E8C2C4BEF5500C3B789 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D6E5E932C4BEF5500C3B789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D6E5E942C4BEF5500C3B789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9D6E5E962C4BEF5500C3B789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AuroraTrace/AuroraTrace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AuroraTrace/Preview Content\"";
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuroraTrace/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTrace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D6E5E972C4BEF5500C3B789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AuroraTrace/AuroraTrace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AuroraTrace/Preview Content\"";
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuroraTrace/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTrace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9D6E5E992C4BEF5500C3B789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AuroraTrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AuroraTrace";
+			};
+			name = Debug;
+		};
+		9D6E5E9A2C4BEF5500C3B789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AuroraTrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AuroraTrace";
+			};
+			name = Release;
+		};
+		9D6E5E9C2C4BEF5500C3B789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTraceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AuroraTrace;
+			};
+			name = Debug;
+		};
+		9D6E5E9D2C4BEF5500C3B789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7DAJUM9J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsaldivar.AuroraTraceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AuroraTrace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D6E5E682C4BEF5300C3B789 /* Build configuration list for PBXProject "AuroraTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6E5E932C4BEF5500C3B789 /* Debug */,
+				9D6E5E942C4BEF5500C3B789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6E5E952C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6E5E962C4BEF5500C3B789 /* Debug */,
+				9D6E5E972C4BEF5500C3B789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6E5E982C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTraceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6E5E992C4BEF5500C3B789 /* Debug */,
+				9D6E5E9A2C4BEF5500C3B789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6E5E9B2C4BEF5500C3B789 /* Build configuration list for PBXNativeTarget "AuroraTraceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6E5E9C2C4BEF5500C3B789 /* Debug */,
+				9D6E5E9D2C4BEF5500C3B789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D6E5E652C4BEF5300C3B789 /* Project object */;
+}
