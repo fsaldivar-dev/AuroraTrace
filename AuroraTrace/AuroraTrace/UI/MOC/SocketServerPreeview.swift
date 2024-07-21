@@ -56,11 +56,13 @@ final class SocketServerPreeviewModel: ObservableObject {
     @Published var messageStatus: String = ""
     @Published var message: [String] = ["1", "2"]
     @Published var response: String = "{\"Mock\": \"Messaje\"}"
-    private var server: AuroraBridgeSocket!
+    private var messageProcessingCase: MessageProcessingUseCase!
+    
     
     init() {
         do {
-            self.server = try .init()
+            let repository = try AuroraBridgeSocketRepository()
+            self.messageProcessingCase = .init(socketRepository: repository)
             messageStatus = "Socket Data preview"
         } catch {
             messageStatus = "Error concet Proxi"
@@ -68,22 +70,7 @@ final class SocketServerPreeviewModel: ObservableObject {
     }
     
     func start() {
-        do {
-            try server.start()
-            server.receive { result in
-                switch result {
-                case .success(let data):
-                    self.message.append(String(data: data, encoding: .utf8)!) 
-                    break
-                case .failure(let error):
-                    break
-                }
-            }.send(message: {
-                self.response.data(using: .utf8)!
-            })
-        } catch {
-            
-        }
+        messageProcessingCase.execute()
     }
     
 }
