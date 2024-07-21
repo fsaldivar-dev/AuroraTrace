@@ -1,5 +1,26 @@
 # Python Server
 AuroraTracePy/request_log.json
+# Ignorar archivos de bytecode de Python
+*.pyc
+*.pyo
+*.pyd
+*.cpython-*.pyc
+
+# Ignorar carpetas de caché de Python
+__pycache__/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de configuración del entorno virtual
+venv/
+.env/
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+
 
 
 # Xcode
@@ -53,10 +74,7 @@ fastlane/test_output
 # Code Injection
 iOSInjectionProject/
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+
 
 # C extensions
 *.so

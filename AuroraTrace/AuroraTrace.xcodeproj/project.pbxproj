@@ -19,6 +19,32 @@
 		9D94C7362C4C2ACD00802A5C /* AuroraBridgeSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7352C4C2ACD00802A5C /* AuroraBridgeSocket.swift */; };
 		9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7392C4C310700802A5C /* SocketServerPreeview.swift */; };
 		9D94C73E2C4C376500802A5C /* NativeTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C73D2C4C376500802A5C /* NativeTextArea.swift */; };
+		9D94C7412C4C97EF00802A5C /* RequestDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7402C4C97EF00802A5C /* RequestDto.swift */; };
+		9D94C7432C4C99CA00802A5C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7422C4C99CA00802A5C /* AppView.swift */; };
+		9D94C7462C4C9A0B00802A5C /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7452C4C9A0B00802A5C /* AppService.swift */; };
+		9D94C7482C4C9A6400802A5C /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7472C4C9A6400802A5C /* RequestService.swift */; };
+		9D94C74C2C4C9AE600802A5C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C74B2C4C9AE600802A5C /* HttpRequest.swift */; };
+		9D94C7522C4CA1BE00802A5C /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7512C4CA1BE00802A5C /* Operators.swift */; };
+		9D94C7542C4CA21200802A5C /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7532C4CA21200802A5C /* Transformable.swift */; };
+		9D94C7572C4CA24000802A5C /* HttpRequestTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7562C4CA24000802A5C /* HttpRequestTransform.swift */; };
+		9D94C7592C4CA33300802A5C /* SSLStateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7582C4CA33300802A5C /* SSLStateTransform.swift */; };
+		9D94C75B2C4CA9A400802A5C /* TimeIntervalTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C75A2C4CA9A400802A5C /* TimeIntervalTransform.swift */; };
+		9D94C75F2C4CAEC000802A5C /* AuroraBridgeSocketRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C75E2C4CAEC000802A5C /* AuroraBridgeSocketRepository.swift */; };
+		9D94C7612C4CAEE300802A5C /* SocketRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7602C4CAEE300802A5C /* SocketRepositoryDelegate.swift */; };
+		9D94C7632C4CAEFC00802A5C /* SocketRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7622C4CAEFC00802A5C /* SocketRepository.swift */; };
+		9D94C7652C4CB03F00802A5C /* MessageProcessingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7642C4CB03F00802A5C /* MessageProcessingUseCase.swift */; };
+		9D94C7682C4CB3B100802A5C /* DynamicSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7672C4CB3B100802A5C /* DynamicSerialize.swift */; };
+		9D94C76A2C4CB3E900802A5C /* SocketMessageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7692C4CB3E900802A5C /* SocketMessageDto.swift */; };
+		9D94C76D2C4CB4F200802A5C /* SSLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C76C2C4CB4F200802A5C /* SSLState.swift */; };
+		9D94C76F2C4CB52300802A5C /* SocketMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C76E2C4CB52300802A5C /* SocketMessageType.swift */; };
+		9D94C7712C4CB56B00802A5C /* SocketMessageTypeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7702C4CB56B00802A5C /* SocketMessageTypeTransform.swift */; };
+		9D94C7732C4CB76800802A5C /* SocketMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7722C4CB76800802A5C /* SocketMessage.swift */; };
+		9D94C7752C4CB9DD00802A5C /* SocketMessageTranform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7742C4CB9DD00802A5C /* SocketMessageTranform.swift */; };
+		9D94C7772C4CBB6900802A5C /* Decodable+deserialización.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7762C4CBB6900802A5C /* Decodable+deserialización.swift */; };
+		9D94C7792C4D35B400802A5C /* RequestBodyDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7782C4D35B400802A5C /* RequestBodyDto.swift */; };
+		9D94C77B2C4D35D400802A5C /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C77A2C4D35D400802A5C /* AnyCodable.swift */; };
+		9D94C77D2C4D35F400802A5C /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C77C2C4D35F400802A5C /* RequestBody.swift */; };
+		9D94C77F2C4D362900802A5C /* RequestBodyTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C77E2C4D362900802A5C /* RequestBodyTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +82,32 @@
 		9D94C7352C4C2ACD00802A5C /* AuroraBridgeSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraBridgeSocket.swift; sourceTree = "<group>"; };
 		9D94C7392C4C310700802A5C /* SocketServerPreeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerPreeview.swift; sourceTree = "<group>"; };
 		9D94C73D2C4C376500802A5C /* NativeTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeTextArea.swift; sourceTree = "<group>"; };
+		9D94C7402C4C97EF00802A5C /* RequestDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDto.swift; sourceTree = "<group>"; };
+		9D94C7422C4C99CA00802A5C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		9D94C7452C4C9A0B00802A5C /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		9D94C7472C4C9A6400802A5C /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		9D94C74B2C4C9AE600802A5C /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		9D94C7512C4CA1BE00802A5C /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		9D94C7532C4CA21200802A5C /* Transformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformable.swift; sourceTree = "<group>"; };
+		9D94C7562C4CA24000802A5C /* HttpRequestTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTransform.swift; sourceTree = "<group>"; };
+		9D94C7582C4CA33300802A5C /* SSLStateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLStateTransform.swift; sourceTree = "<group>"; };
+		9D94C75A2C4CA9A400802A5C /* TimeIntervalTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTransform.swift; sourceTree = "<group>"; };
+		9D94C75E2C4CAEC000802A5C /* AuroraBridgeSocketRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraBridgeSocketRepository.swift; sourceTree = "<group>"; };
+		9D94C7602C4CAEE300802A5C /* SocketRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRepositoryDelegate.swift; sourceTree = "<group>"; };
+		9D94C7622C4CAEFC00802A5C /* SocketRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRepository.swift; sourceTree = "<group>"; };
+		9D94C7642C4CB03F00802A5C /* MessageProcessingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageProcessingUseCase.swift; sourceTree = "<group>"; };
+		9D94C7672C4CB3B100802A5C /* DynamicSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSerialize.swift; sourceTree = "<group>"; };
+		9D94C7692C4CB3E900802A5C /* SocketMessageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessageDto.swift; sourceTree = "<group>"; };
+		9D94C76C2C4CB4F200802A5C /* SSLState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLState.swift; sourceTree = "<group>"; };
+		9D94C76E2C4CB52300802A5C /* SocketMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessageType.swift; sourceTree = "<group>"; };
+		9D94C7702C4CB56B00802A5C /* SocketMessageTypeTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessageTypeTransform.swift; sourceTree = "<group>"; };
+		9D94C7722C4CB76800802A5C /* SocketMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessage.swift; sourceTree = "<group>"; };
+		9D94C7742C4CB9DD00802A5C /* SocketMessageTranform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessageTranform.swift; sourceTree = "<group>"; };
+		9D94C7762C4CBB6900802A5C /* Decodable+deserialización.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+deserialización.swift"; sourceTree = "<group>"; };
+		9D94C7782C4D35B400802A5C /* RequestBodyDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyDto.swift; sourceTree = "<group>"; };
+		9D94C77A2C4D35D400802A5C /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		9D94C77C2C4D35F400802A5C /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		9D94C77E2C4D362900802A5C /* RequestBodyTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +158,7 @@
 		9D6E5E6F2C4BEF5300C3B789 /* AuroraTrace */ = {
 			isa = PBXGroup;
 			children = (
+				9D94C7502C4CA1A700802A5C /* Utils */,
 				9D94C7382C4C30E900802A5C /* UI */,
 				9D94C7372C4C30A600802A5C /* Data */,
 				9D94C72F2C4C27A000802A5C /* Domain */,
@@ -148,6 +201,7 @@
 		9D94C72F2C4C27A000802A5C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9D94C7642C4CB03F00802A5C /* MessageProcessingUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -164,6 +218,9 @@
 		9D94C7372C4C30A600802A5C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9D94C75D2C4CAEAF00802A5C /* Repository */,
+				9D94C7492C4C9AC100802A5C /* Models */,
+				9D94C7442C4C99FB00802A5C /* Service */,
 				9D94C7322C4C27B400802A5C /* Socket */,
 			);
 			path = Data;
@@ -174,6 +231,7 @@
 			children = (
 				9D94C73C2C4C375300802A5C /* Components */,
 				9D94C73B2C4C374500802A5C /* MOC */,
+				9D94C7422C4C99CA00802A5C /* AppView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -192,6 +250,98 @@
 				9D94C73D2C4C376500802A5C /* NativeTextArea.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9D94C73F2C4C97D700802A5C /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7402C4C97EF00802A5C /* RequestDto.swift */,
+				9D94C7692C4CB3E900802A5C /* SocketMessageDto.swift */,
+				9D94C7782C4D35B400802A5C /* RequestBodyDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		9D94C7442C4C99FB00802A5C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7452C4C9A0B00802A5C /* AppService.swift */,
+				9D94C7472C4C9A6400802A5C /* RequestService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9D94C7492C4C9AC100802A5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7552C4CA22500802A5C /* Transformables */,
+				9D94C74A2C4C9ACF00802A5C /* Entity */,
+				9D94C73F2C4C97D700802A5C /* Dto */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D94C74A2C4C9ACF00802A5C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C76B2C4CB4E600802A5C /* enums */,
+				9D94C74B2C4C9AE600802A5C /* HttpRequest.swift */,
+				9D94C7722C4CB76800802A5C /* SocketMessage.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9D94C7502C4CA1A700802A5C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7662C4CB39800802A5C /* Serializer */,
+				9D94C7512C4CA1BE00802A5C /* Operators.swift */,
+				9D94C7532C4CA21200802A5C /* Transformable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9D94C7552C4CA22500802A5C /* Transformables */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7562C4CA24000802A5C /* HttpRequestTransform.swift */,
+				9D94C7582C4CA33300802A5C /* SSLStateTransform.swift */,
+				9D94C75A2C4CA9A400802A5C /* TimeIntervalTransform.swift */,
+				9D94C7702C4CB56B00802A5C /* SocketMessageTypeTransform.swift */,
+				9D94C7742C4CB9DD00802A5C /* SocketMessageTranform.swift */,
+				9D94C77E2C4D362900802A5C /* RequestBodyTransform.swift */,
+			);
+			path = Transformables;
+			sourceTree = "<group>";
+		};
+		9D94C75D2C4CAEAF00802A5C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C75E2C4CAEC000802A5C /* AuroraBridgeSocketRepository.swift */,
+				9D94C7602C4CAEE300802A5C /* SocketRepositoryDelegate.swift */,
+				9D94C7622C4CAEFC00802A5C /* SocketRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9D94C7662C4CB39800802A5C /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C7672C4CB3B100802A5C /* DynamicSerialize.swift */,
+				9D94C7762C4CBB6900802A5C /* Decodable+deserialización.swift */,
+				9D94C77A2C4D35D400802A5C /* AnyCodable.swift */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		9D94C76B2C4CB4E600802A5C /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				9D94C76C2C4CB4F200802A5C /* SSLState.swift */,
+				9D94C76E2C4CB52300802A5C /* SocketMessageType.swift */,
+				9D94C77C2C4D35F400802A5C /* RequestBody.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +475,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */,
+				9D94C7712C4CB56B00802A5C /* SocketMessageTypeTransform.swift in Sources */,
+				9D94C7652C4CB03F00802A5C /* MessageProcessingUseCase.swift in Sources */,
+				9D94C77D2C4D35F400802A5C /* RequestBody.swift in Sources */,
 				9D94C7342C4C27F100802A5C /* ServerSocket.swift in Sources */,
+				9D94C7572C4CA24000802A5C /* HttpRequestTransform.swift in Sources */,
+				9D94C7432C4C99CA00802A5C /* AppView.swift in Sources */,
+				9D94C7482C4C9A6400802A5C /* RequestService.swift in Sources */,
+				9D94C7792C4D35B400802A5C /* RequestBodyDto.swift in Sources */,
+				9D94C7682C4CB3B100802A5C /* DynamicSerialize.swift in Sources */,
+				9D94C7732C4CB76800802A5C /* SocketMessage.swift in Sources */,
 				9D6E5E732C4BEF5300C3B789 /* ContentView.swift in Sources */,
+				9D94C7412C4C97EF00802A5C /* RequestDto.swift in Sources */,
+				9D94C77B2C4D35D400802A5C /* AnyCodable.swift in Sources */,
+				9D94C7612C4CAEE300802A5C /* SocketRepositoryDelegate.swift in Sources */,
+				9D94C7462C4C9A0B00802A5C /* AppService.swift in Sources */,
+				9D94C74C2C4C9AE600802A5C /* HttpRequest.swift in Sources */,
+				9D94C76D2C4CB4F200802A5C /* SSLState.swift in Sources */,
+				9D94C7632C4CAEFC00802A5C /* SocketRepository.swift in Sources */,
+				9D94C7522C4CA1BE00802A5C /* Operators.swift in Sources */,
 				9D6E5E752C4BEF5300C3B789 /* Item.swift in Sources */,
 				9D6E5E712C4BEF5300C3B789 /* AuroraTraceApp.swift in Sources */,
 				9D94C73E2C4C376500802A5C /* NativeTextArea.swift in Sources */,
+				9D94C7542C4CA21200802A5C /* Transformable.swift in Sources */,
+				9D94C76F2C4CB52300802A5C /* SocketMessageType.swift in Sources */,
 				9D94C7362C4C2ACD00802A5C /* AuroraBridgeSocket.swift in Sources */,
+				9D94C75F2C4CAEC000802A5C /* AuroraBridgeSocketRepository.swift in Sources */,
+				9D94C75B2C4CA9A400802A5C /* TimeIntervalTransform.swift in Sources */,
+				9D94C7752C4CB9DD00802A5C /* SocketMessageTranform.swift in Sources */,
+				9D94C76A2C4CB3E900802A5C /* SocketMessageDto.swift in Sources */,
+				9D94C7592C4CA33300802A5C /* SSLStateTransform.swift in Sources */,
+				9D94C7772C4CBB6900802A5C /* Decodable+deserialización.swift in Sources */,
+				9D94C77F2C4D362900802A5C /* RequestBodyTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
