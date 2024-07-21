@@ -38,11 +38,13 @@ final class AuroraBridgeSocket: ServerSocket {
         onConnectionStatusChange?(.connecting)
     }
     
+    @discardableResult
     func receive(status completion: ((ConnectionStatus) -> Void)?) -> Self {
         onConnectionStatusChange = completion
         return self
     }
     
+    @discardableResult
     func receive(message completion: @escaping (Result<Data, any Error>) -> Void) -> Self {
         onReceiveMessage = completion
         return self
