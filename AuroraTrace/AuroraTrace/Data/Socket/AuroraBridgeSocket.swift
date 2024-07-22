@@ -12,7 +12,7 @@ final class AuroraBridgeSocket: ServerSocket {
     
     private let port: NWEndpoint.Port
     private let listener: NWListener
-    private var onReceiveMessage: ((Result<Data, any Error>) -> Void)?
+    private var onReceiveMessage: (@MainActor (Result<Data, any Error>) async -> Void)?
     private var onConnectionStatusChange: ((ConnectionStatus) -> Void)?
     private var getResponse: (() -> Data)?
     private var connections: [NWConnection] = []
@@ -45,7 +45,7 @@ final class AuroraBridgeSocket: ServerSocket {
     }
     
     @discardableResult
-    func receive(message completion: @escaping (Result<Data, any Error>) -> Void) -> Self {
+    func receive(message completion: @MainActor @escaping (Result<Data, any Error>) async -> Void) -> Self {
         onReceiveMessage = completion
         return self
     }
@@ -83,14 +83,15 @@ final class AuroraBridgeSocket: ServerSocket {
     
     private func receive(on connection: NWConnection) {
         connection.receive(minimumIncompleteLength: 1, maximumLength: 65536) { [weak self] (data, _, isComplete, error) in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
+            Task(priority: .high) { [weak self] in
+                guard let self = self else { return }
                 if let data = data, !data.isEmpty {
-                    self.onReceiveMessage?(.success(data))
+                    await self.onReceiveMessage?(.success(data))
+                    try? await Task.sleep(nanoseconds: 2_000_000_000)
                     self.sendResponse(to: connection, message: data)
                 } else {
                     if let error = error {
-                        self.onReceiveMessage?(.failure(error))
+                        await self.onReceiveMessage?(.failure(error))
                         connection.cancel()
                     } else if isComplete {
                         connection.cancel()

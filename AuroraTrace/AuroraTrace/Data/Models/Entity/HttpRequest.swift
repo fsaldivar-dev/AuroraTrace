@@ -7,19 +7,20 @@
 
 import Foundation
 struct HttpRequest {
-    let method: String
-    let url: String
-    let path: String
-    let headers: [String: String]
-    let query: [String: String]
-    let host: String
-    let port: Int
-    let scheme: String
-    let body: RequestBody?
-    let content: Data?
-    let fullURL: String
-    let timestampStart: TimeInterval
-    let timestampEnd: TimeInterval
-    let cookies: [String: String]
-    let sslState: SSLState
+    var id: String
+    var method: String
+    var url: String
+    var path: String
+    var headers: [String: String]
+    var query: [String: String]
+    var host: String
+    var port: Int
+    var scheme: String
+    var body: RequestBody?
+    var content: Data?
+    var fullURL: String
+    var timestampStart: TimeInterval
+    var timestampEnd: TimeInterval
+    var cookies: [String: String]
+    var sslState: SSLState
 }

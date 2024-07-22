@@ -8,6 +8,7 @@
 import Foundation
                 
 struct HttpRequestDto: Codable {
+    let id: String
     let method: String
     let url: String
     let path: String
@@ -25,6 +26,7 @@ struct HttpRequestDto: Codable {
     let sslState: String
 
     enum CodingKeys: String, CodingKey {
+        case id
         case method
         case url
         case path
@@ -44,6 +46,7 @@ struct HttpRequestDto: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
         self.method = try container.decode(String.self, forKey: .method)
         self.url = try container.decode(String.self, forKey: .url)
         self.path = try container.decode(String.self, forKey: .path)
