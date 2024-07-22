@@ -13,10 +13,10 @@ class AuroraBridgeSocketRepository: SocketRepository {
     weak var delegate: SocketRepositoryDelegate?
     private let server: AuroraBridgeSocket
     
-     init() throws {
+    init() throws {
         try self.server = .init()
     }
-
+    
     func connect() {
         do {
             try server.start()
@@ -26,26 +26,21 @@ class AuroraBridgeSocketRepository: SocketRepository {
                 guard let self = self else {
                     return
                 }
-                do {
-                    switch response {
-                    case .success(let success):
-                        
-                        delegate?.didReceiveMessage(success)
-                    case .failure(let failure):
-                        print(failure)
-                    }
+                switch response {
+                case .success(let success):
                     
-                } catch {
-                    print(error)
+                    await delegate?.didReceiveMessage(success)
+                case .failure(let failure):
+                    print(failure)
                 }
             }
         } catch {
-            
+            print("Error")
         }
     }
-
+    
     func disconnect() {
         server.stop()
     }
-
+    
 }
