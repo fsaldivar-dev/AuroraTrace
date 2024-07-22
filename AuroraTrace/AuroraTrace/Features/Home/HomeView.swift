@@ -17,18 +17,15 @@ struct HomeView: View {
     }
     
     var body: some View {
-        AuroraTableView(model: $viewModel.tableView)
-            .onChange(of: model.tableView, perform: { newValue in
-                if newValue.items.count > 0 {
-                    viewModel.addItem(newValue.items.last!)
-                }
-            })
-            .onAppear(perform: {
-                if !isLoading {
-                    isLoading.toggle()
-                    model.initialize()
-                }
-            })
+        HSplitView(content: {      
+            AuroraTableViewV2(viewModel: $model.tableView)
+        }).onAppear(perform: {
+            if !isLoading {
+                isLoading.toggle()
+                model.initialize()
+            }
+        })
+        
     }
     
 }
