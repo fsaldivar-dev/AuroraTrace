@@ -50,6 +50,8 @@
 		9D94C7882C4DDDD500802A5C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7872C4DDDD500802A5C /* HomeViewModel.swift */; };
 		9D94C78A2C4DE1D000802A5C /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7892C4DE1D000802A5C /* HomeModule.swift */; };
 		9D94C78D2C4DE40700802A5C /* AuroraTableRowModelTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C78C2C4DE40700802A5C /* AuroraTableRowModelTransform.swift */; };
+		9D94C78F2C4EFB7600802A5C /* RequestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */; };
+		9D94C7922C4F127F00802A5C /* UAParserSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D94C7912C4F127F00802A5C /* UAParserSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,7 @@
 		9D94C7872C4DDDD500802A5C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9D94C7892C4DE1D000802A5C /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		9D94C78C2C4DE40700802A5C /* AuroraTableRowModelTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTableRowModelTransform.swift; sourceTree = "<group>"; };
+		9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D94C7922C4F127F00802A5C /* UAParserSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +264,7 @@
 			children = (
 				9D94C7802C4DD98C00802A5C /* TableView */,
 				9D94C73D2C4C376500802A5C /* NativeTextArea.swift */,
+				9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -407,6 +412,9 @@
 			dependencies = (
 			);
 			name = AuroraTrace;
+			packageProductDependencies = (
+				9D94C7912C4F127F00802A5C /* UAParserSwift */,
+			);
 			productName = AuroraTrace;
 			productReference = 9D6E5E6D2C4BEF5300C3B789 /* AuroraTrace.app */;
 			productType = "com.apple.product-type.application";
@@ -479,6 +487,9 @@
 				Base,
 			);
 			mainGroup = 9D6E5E642C4BEF5300C3B789;
+			packageReferences = (
+				9D94C7902C4F127F00802A5C /* XCRemoteSwiftPackageReference "UAParserSwift" */,
+			);
 			productRefGroup = 9D6E5E6E2C4BEF5300C3B789 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -521,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D94C78F2C4EFB7600802A5C /* RequestDetail.swift in Sources */,
 				9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */,
 				9D94C78A2C4DE1D000802A5C /* HomeModule.swift in Sources */,
 				9D94C7822C4DDB4A00802A5C /* AuroraTableView.swift in Sources */,
@@ -883,6 +895,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D94C7902C4F127F00802A5C /* XCRemoteSwiftPackageReference "UAParserSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/UAParserSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D94C7912C4F127F00802A5C /* UAParserSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D94C7902C4F127F00802A5C /* XCRemoteSwiftPackageReference "UAParserSwift" */;
+			productName = UAParserSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D6E5E652C4BEF5300C3B789 /* Project object */;
 }

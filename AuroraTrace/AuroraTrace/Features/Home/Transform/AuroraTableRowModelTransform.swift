@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UAParserSwift
 
 struct AuroraTableRowModelTransform: Transformable {
     typealias InputType = HttpRequest
@@ -25,7 +26,24 @@ struct AuroraTableRowModelTransform: Transformable {
     }
     
     private static func getClient(_ headers: [String: String]) -> String {
-        return headers["User-Agent"] ?? "uknow"
+        guard let agent = headers["User-Agent"] ?? headers["user-agent"] else {
+            return "Unknown"
+        }
+        let parser = UAParser(agent: agent)
+        return parser.browser?.name ?? parser.engine?.name ?? determineClientApp(from: parser.agent)
+    }
+    
+    static func determineClientApp(from userAgent: String) -> String {
+        let components = userAgent.components(separatedBy: CharacterSet(charactersIn: " /()"))
+        
+        for component in components where component.count > 1 {
+            if !component.allSatisfy({ $0.isNumber || $0 == "." }) &&
+               !["Mozilla", "AppleWebKit", "KHTML", "Gecko", "like", "Version"].contains(component) {
+                return component
+            }
+        }
+        
+        return userAgent
     }
 }
 

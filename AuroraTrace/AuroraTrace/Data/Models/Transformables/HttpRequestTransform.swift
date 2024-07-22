@@ -29,6 +29,7 @@ struct HttpRequestTransform: Transformable {
               cookies: input.cookies,
               sslState: input.sslState.transform())
     }
+    
 }
 
 extension HttpRequestDto {

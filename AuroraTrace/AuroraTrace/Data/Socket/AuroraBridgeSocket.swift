@@ -87,7 +87,7 @@ final class AuroraBridgeSocket: ServerSocket {
                 guard let self = self else { return }
                 if let data = data, !data.isEmpty {
                     await self.onReceiveMessage?(.success(data))
-                    try? await Task.sleep(nanoseconds: 2_000_000_000)
+                    
                     self.sendResponse(to: connection, message: data)
                 } else {
                     if let error = error {
