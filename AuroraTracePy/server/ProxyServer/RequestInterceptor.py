@@ -21,11 +21,10 @@ class RequestInterceptor:
     def request(self, flow: http.HTTPFlow) -> None:
         # Mapear los datos de la solicitud
         # Determinar el estado de SSL/TLS basado en el esquema
-        ssl_state = SSLState.OPEN.value if flow.request.scheme == "https" else SSLState.CLOSED.value
-
-        
+        ssl_state = SSLState.PENDING.value
         request_data = {
             "content": {
+                "id": flow.id,
                 "type": "HttpRequestDto",
                 "method": flow.request.method,
                 "url": flow.request.url,
