@@ -7,6 +7,5 @@
 
 import Foundation
 struct SocketMessage {
-    var messageType: SocketMessageType
     var content: DynamicDecodable
 }
