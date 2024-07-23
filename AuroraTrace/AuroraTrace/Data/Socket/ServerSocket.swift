@@ -12,7 +12,7 @@ protocol ServerSocket: AnyObject {
     var isRunning: Bool { get }
     func start() throws
     func stop()
-    func receive(message completion: @escaping (Result<Data, any Error>) -> Void) -> Self
+    func receive(message completion: @MainActor @escaping (Result<Data, any Error>) async -> Void) -> Self
     func send(message data: @escaping () -> Data)
     func receive(status completion: ((ConnectionStatus) -> Void)?) -> Self
 }

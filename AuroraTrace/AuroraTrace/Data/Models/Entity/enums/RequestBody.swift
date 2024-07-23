@@ -8,6 +8,7 @@
 import Foundation
 enum RequestBody: Codable {
     case dictionary([String: AnyCodable])
+    case array([String])
     case string(String)
     case data(Data)
     case empty

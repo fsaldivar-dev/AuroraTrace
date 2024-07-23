@@ -5,3 +5,4 @@ from enum import Enum
 class SSLState(Enum):
     OPEN = "Open"
     CLOSED = "Closed"
+    PENDING = "Pendig"

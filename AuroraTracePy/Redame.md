@@ -46,3 +46,8 @@ python3 main.py setup_proxy
 ``` sh
 deactivate
 ```
+
+8.- **Runn**:
+``` sh
+python3 main.py setup_proxy
+```

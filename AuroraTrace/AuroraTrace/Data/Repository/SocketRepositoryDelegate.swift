@@ -7,5 +7,7 @@
 
 import Foundation
 protocol SocketRepositoryDelegate: AnyObject {
-    func didReceiveMessage(_ message: Data)
+    
+    @MainActor
+    func didReceiveMessage(_ message: Data) async
 }
