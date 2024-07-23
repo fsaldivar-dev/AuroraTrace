@@ -50,7 +50,6 @@
 		9D94C7882C4DDDD500802A5C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7872C4DDDD500802A5C /* HomeViewModel.swift */; };
 		9D94C78A2C4DE1D000802A5C /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C7892C4DE1D000802A5C /* HomeModule.swift */; };
 		9D94C78D2C4DE40700802A5C /* AuroraTableRowModelTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C78C2C4DE40700802A5C /* AuroraTableRowModelTransform.swift */; };
-		9D94C78F2C4EFB7600802A5C /* RequestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */; };
 		9D94C7922C4F127F00802A5C /* UAParserSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D94C7912C4F127F00802A5C /* UAParserSwift */; };
 /* End PBXBuildFile section */
 
@@ -120,7 +119,6 @@
 		9D94C7872C4DDDD500802A5C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9D94C7892C4DE1D000802A5C /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		9D94C78C2C4DE40700802A5C /* AuroraTableRowModelTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTableRowModelTransform.swift; sourceTree = "<group>"; };
-		9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +262,6 @@
 			children = (
 				9D94C7802C4DD98C00802A5C /* TableView */,
 				9D94C73D2C4C376500802A5C /* NativeTextArea.swift */,
-				9D94C78E2C4EFB7600802A5C /* RequestDetail.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -532,7 +529,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D94C78F2C4EFB7600802A5C /* RequestDetail.swift in Sources */,
 				9D94C73A2C4C310700802A5C /* SocketServerPreeview.swift in Sources */,
 				9D94C78A2C4DE1D000802A5C /* HomeModule.swift in Sources */,
 				9D94C7822C4DDB4A00802A5C /* AuroraTableView.swift in Sources */,
