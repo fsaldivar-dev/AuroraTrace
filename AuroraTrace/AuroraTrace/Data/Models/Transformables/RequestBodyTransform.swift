@@ -21,6 +21,8 @@ struct RequestBodyTransform: Transformable {
             return .data(data)
         case .empty:
             return .empty
+        case .array(let array):
+            return .array(array)
         }
     }
 }

@@ -12,8 +12,9 @@ struct HttpRequestTransform: Transformable {
     typealias OutputType = HttpRequest
     
     static func transform(_ input: HttpRequestDto) -> HttpRequest {
-        .init(method: input.method,
-              url: input.url,
+        .init(id: input.id,
+              method: input.method,
+              url: input.host,
               path: input.path,
               headers: input.headers,
               query: input.query,
@@ -28,6 +29,7 @@ struct HttpRequestTransform: Transformable {
               cookies: input.cookies,
               sslState: input.sslState.transform())
     }
+    
 }
 
 extension HttpRequestDto {

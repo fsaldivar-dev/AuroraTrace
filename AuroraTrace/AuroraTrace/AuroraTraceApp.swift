@@ -13,7 +13,7 @@ import UniformTypeIdentifiers
 struct AuroraTraceApp: App {
     var body: some Scene {
         Window("AuroraTrace", id: "Home") {
-            SocketServerPreeview()
+            AnyView(HomeModule.build())
         }
     }
 }
