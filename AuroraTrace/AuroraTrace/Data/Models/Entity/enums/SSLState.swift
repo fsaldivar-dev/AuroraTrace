@@ -7,7 +7,8 @@
 
 import Foundation
 enum SSLState: String {
-    case open
-    case closed
-    case uknow
+    case open = "Open"
+    case closed = "Closed"
+    case pending = "Pendig"
+    case uknow = ""
 }

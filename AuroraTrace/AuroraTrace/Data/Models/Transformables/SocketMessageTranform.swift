@@ -12,8 +12,6 @@ struct SocketMessageTranform: Transformable {
     typealias OutputType = SocketMessage
     
     static func transform(_ input: SocketMessageDto) -> SocketMessage {
-        fatalError("Disabled")
-//        SocketMessage(messageType: input.messageType.transform(),
-//                      content: input.content)
+        SocketMessage(content: input.content)
     }
 }

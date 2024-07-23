@@ -30,6 +30,7 @@ extension Decodable {
         } catch let DecodingError.dataCorrupted(context) {
             print("Data corrupted: \(context.debugDescription)")
             print("CodingPath: \(context.codingPath)")
+            print("Json: \(jsonString)")
             throw DecodingError.dataCorrupted(context)
         } catch let DecodingError.keyNotFound(key, context) {
             print("Key '\(key)' not found: \(context.debugDescription)")
@@ -58,6 +59,7 @@ extension Decodable {
         } catch let DecodingError.dataCorrupted(context) {
             print("Data corrupted: \(context.debugDescription)")
             print("CodingPath: \(context.codingPath)")
+            print("Json: \(String(data: data, encoding: .utf8))")
             throw DecodingError.dataCorrupted(context)
         } catch let DecodingError.keyNotFound(key, context) {
             print("Key '\(key)' not found: \(context.debugDescription)")
