@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var model: HomeViewModel
-    @StateObject var viewModel = AuroraTableViewModel()
     @State var isLoading: Bool = false
     
     init(model: HomeViewModel) {
@@ -18,7 +17,7 @@ struct HomeView: View {
     
     var body: some View {
         HSplitView(content: {      
-            AuroraTableViewV2(viewModel: $model.tableView)
+            AuroraTableView(viewModel: $model.tableView)
         }).onAppear(perform: {
             if !isLoading {
                 isLoading.toggle()
