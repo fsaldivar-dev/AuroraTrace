@@ -83,16 +83,8 @@ To enable communication between the iOS application and the proxy server:
 - If you encounter issues connecting the application to the server, verify that both are on the same network and that the firewall is not blocking connections.
 - For Python server issues, check the logs in `AuroraTracePy/logs/`.
 
-# Usage
-AuroraTrace can be used to:
+## License
 
-Debug Applications: Monitor and analyze the traffic between your application and the server.
-Simulate Scenarios: Use mock responses to test your application under different conditions.
-Educate and Learn: Explore the inner workings of HTTP requests and responses.
-License
-AuroraTrace is licensed under the MIT License. For more details, see the LICENSE file.
-
-# License
 AuroraTrace is licensed under the MIT License. For more details, see the [LICENSE](./LICENSE) file.
 
 # Disclaimer
