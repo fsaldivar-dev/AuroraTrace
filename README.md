@@ -92,3 +92,8 @@ Please read the [DISCLAIMER](./DISCLAIMER.md) before using AuroraTrace.
 
 # Code of Ethics
 By using AuroraTrace, you agree to adhere to our [Code of Ethics](./ETHICS.md).
+
+
+---
+
+> *El conocimiento se pudre cuando se guarda. Se mantiene vivo cuando se comparte.* — [Manifiesto](./MANIFESTO.md)
